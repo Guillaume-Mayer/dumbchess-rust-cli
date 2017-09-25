@@ -1,0 +1,7 @@
+[package]
+name = "chess_cli"
+version = "0.1.0"
+authors = ["Guillaume Mayer <gui77aume@gmail.com>"]
+
+[dependencies]
+chess = { path = "../chess" }
