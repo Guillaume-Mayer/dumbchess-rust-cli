@@ -1,8 +1,8 @@
 extern crate chess;
 
-use chess::Board;
+use chess::game::Game;
 
 fn main() {
-    let b = Board::new();
-    println!("Hello Chess\n\n{}", b);
+    let g = Game::new();
+    println!("Hello Chess\n\n{:?}", g);
 }
