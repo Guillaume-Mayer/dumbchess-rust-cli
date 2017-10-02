@@ -1,10 +1,14 @@
 extern crate chess;
 
 use chess::game::Game;
-use chess::mov::Mov;
 
 fn main() {
-    let g = Game::new();
-    let m = Mov::Quiet(1, 2);
-    //g.play(m);
+    let mut g = Game::new();
+    println!("{}", g.to_fen());
+    g.play("e4");
+    println!("{}", g.to_fen());
+    g.play("c5");
+    println!("{}", g.to_fen());
+    g.play("Nf3");
+    println!("{}", g.to_fen());
 }
