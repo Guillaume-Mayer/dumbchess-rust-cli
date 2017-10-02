@@ -1,8 +1,10 @@
 extern crate chess;
 
 use chess::game::Game;
+use chess::mov::Mov;
 
 fn main() {
     let g = Game::new();
-    println!("Hello Chess\n\n{:?}", g);
+    let m = Mov::Quiet(1, 2);
+    //g.play(m);
 }
