@@ -5,8 +5,9 @@ use std::io;
 use std::io::Write;
 
 fn main() {
+    const VERSION: &'static str = env!("CARGO_PKG_VERSION");
+    println!("Welcome to DumbChess {}", VERSION);
     let mut g = Game::new();
-    println!("Welcome to DumbChess");
     loop {
         print!("> ");
         io::stdout().flush().expect("Failed to flush stdout");
