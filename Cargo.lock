@@ -1,5 +1,5 @@
 [root]
-name = "chess_cli"
+name = "client"
 version = "0.1.0"
 dependencies = [
  "chess 0.1.0",
