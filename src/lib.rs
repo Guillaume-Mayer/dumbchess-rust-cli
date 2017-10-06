@@ -17,7 +17,7 @@ pub fn run() {
             "new" => g = Game::new(),
             "fen" => println!("{}", g.to_fen()),
             "pgn" => println!("{}", g.to_pgn()),
-            "show" => println!("{}", g.to_str()),
+            "show" | "utf8" => println!("{}", g.to_str()),
             _ => g.play(comm),
         }
     }
