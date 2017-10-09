@@ -18,6 +18,7 @@ pub fn run() {
             "fen" => println!("{}", g.to_fen()),
             "pgn" => println!("{}", g.to_pgn()),
             "show" | "utf8" => println!("{}", g.to_str()),
+            "moves" => println!("{:?}", g.moves()),
             _ => g.play(comm),
         }
     }
