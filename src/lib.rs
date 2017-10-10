@@ -19,6 +19,7 @@ pub fn run() {
             "pgn" => println!("{}", g.to_pgn()),
             "show" | "utf8" => println!("{}", g.to_str()),
             "moves" => g.print_moves(),
+            "debug" => println!("{:?}", g),
             _ => g.play(comm),
         }
     }
